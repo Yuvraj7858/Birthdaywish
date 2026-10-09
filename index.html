@@ -26,6 +26,44 @@ Happy Birthday Donut ❤️</textarea> <div class="om-bday-counter" id="om-bday-
   <!-- GSAP Animation Engine -->
   <script src="gsap.min.js"></script>
   <!-- Application Interaction Logic -->
+    <!-- Preloaded High-Res Photos Data -->
+  <script src="photos_data.js"></script>
+  <script>
+    // Automatically load Aasha's Birthday Surprise by default if no other surprise is specified
+    if (!window.location.hash || window.location.hash === '#' || window.location.hash === '#preview') {
+      window.OM_BIRTHDAY_DATA = {
+        "n": "Aasha",
+        "f": "Your Love",
+        "ck": "p",
+        "a": "",
+        "b": "",
+        "rs": [
+          "Your contagious smile that brightens my whole world",
+          "The way you care and love with all your heart",
+          "You are like water to a little plant for my life",
+          "Tum ho toh mein hu — everything is meaningful with you",
+          "My sweetest Donut, forever & always ❤️"
+        ],
+        "p": [
+          "photo1.jpg",
+          "photo2.png",
+          "photo3.png",
+          "photo4.png",
+          "photo5.png"
+        ],
+        "c": [
+          "That adorable smile 🥰",
+          "Prettiest soul inside out ✨",
+          "Live, laugh, love with you 💖",
+          "Those sparkling eyes 🌸",
+          "Forever my favorite view 🍃"
+        ],
+        "m": "Dear Aasha,\n\nFirst of all Happy Birthday To You. Tumhare aaj janam din par mein bahut khush hu. Mein bata nahi sakta ki kitna bas ye khushi tumhare saath mein apne lifetime tak chahta hu. You're the best person in my life. Mein toh tumhare bina khudki life imagine hi nhi kr paaunga kyunki tum wo ho jaise ek nanhe se paudhe ko pani. Tum mere liye kitna important ye words me bayaan kr hi nhi sakta. Bas itna hi kahunga, tum ho toh mein hu.\n\nAnd again enjoy the day cause ye tumhara din h.\nHappy Birthday Donut ❤️",
+        "t": Date.now()
+      };
+    }
+  </script>
+  <!-- Application Interaction Logic -->
   <script src="app.js"></script>
 </body>
 </html>
